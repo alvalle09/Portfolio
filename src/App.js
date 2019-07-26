@@ -19,29 +19,27 @@ class App extends Component {
     }
 
     render() {
-        const bio = this.state.displayBio ? (
-          <div>
-            <p>
-              I live in the Rio Grande Valley in beautiful South Texas,
-              and am passionate about coding.
-            </p>
-            <p>
-              My favorit language is Javascript, and I enjoy React and
-              Angular as well.
-            </p>
-            <p>
-              When I am not coding, I spend time in the outdoors fishing
-              or camping, or playing drums!
-            </p>
-          </div>
-        ) : null;
-
         return (
             <div>
                 <h1>Hello!</h1>
                 <p>I'm AlFredo Valle</p>
                 <p>Looking forward to work on new and exciting projects!</p>
-                {bio}
+                {this.state.displayBio ? (
+                    <div>
+                      <p>
+                        I live in the Rio Grande Valley in beautiful South Texas,
+                        and am passionate about coding.
+                      </p>
+                      <p>
+                        My favorit language is Javascript, and I enjoy React and
+                        Angular as well.
+                      </p>
+                      <p>
+                        When I am not coding, I spend time in the outdoors fishing
+                        or camping, or playing drums!
+                      </p>
+                    </div>
+                  ) : null }
             </div>
         )
     }
