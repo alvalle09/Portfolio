@@ -16,6 +16,17 @@ class App extends Component {
         this.state = {
             displayBio: false 
         };
+
+        this.readMore = this.readMore.bind(this);
+        this.readLess = this.readLess.bind(this);
+    }
+
+    readMore() {
+        this.setState( {displayBio: true});
+    }
+
+    readLess() {
+        this.setState( {displayBio: false});
     }
 
     render() {
@@ -38,8 +49,13 @@ class App extends Component {
                         When I am not coding, I spend time in the outdoors fishing
                         or camping, or playing drums!
                       </p>
+                      <button onClick={this.readLess}>Read less</button>
                     </div>
-                  ) : null }
+                  ) : (
+                      <div>
+                        <button onClick={this.readMore}>Read more</button>
+                      </div>
+                  ) }
             </div>
         )
     }
