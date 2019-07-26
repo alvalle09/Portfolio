@@ -19,7 +19,7 @@ class App extends Component {
     }
 
     render() {
-        let bio = (
+        const bio = this.state.displayBio ? (
           <div>
             <p>
               I live in the Rio Grande Valley in beautiful South Texas,
@@ -34,11 +34,7 @@ class App extends Component {
               or camping, or playing drums!
             </p>
           </div>
-        );
-
-        if (!this.state.displayBio) {
-            bio = null;
-        }
+        ) : null;
 
         return (
             <div>
