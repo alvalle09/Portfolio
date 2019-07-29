@@ -11,17 +11,9 @@ import React, { Component } from 'react';
 
 
 class App extends Component {
-    constructor() {
-        super(); // need this line otherwise "this" is not available
-        this.state = {
-            displayBio: false 
-        };
+    state = { displayBio: false} ;
 
-        this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
-        
-    }
-
-    toggleDisplayBio() {
+    toggleDisplayBio = () => {
         this.setState( {displayBio: !this.state.displayBio });
     }
 
@@ -42,8 +34,8 @@ class App extends Component {
                         Angular as well.
                       </p>
                       <p>
-                        When I am not coding, I spend time in the outdoors fishing
-                        or camping, or playing drums!
+                        When I am not coding, I like to spend time in the outdoors fishing
+                        and camping, or playing drums!
                       </p>
                       <button onClick={this.toggleDisplayBio}>Show less</button>
                     </div>
