@@ -34,7 +34,7 @@ class App extends Component {
                 {this.state.displayBio ? (
                     <div>
                       <p>
-                        I live in the Rio Grande Valley in beautiful South Texas,
+                        I live in San Benito in the Rio Grande Valley area of beautiful south Texas,
                         and am passionate about coding.
                       </p>
                       <p>
