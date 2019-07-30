@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Projects from './Projects';
 import SocialProfiles from './SocialProfiles';
+import profile from './assets/profile.png';
 
 
 class App extends Component {
@@ -13,14 +14,15 @@ class App extends Component {
   render() {
     return (
       <div>
+        <img src={profile} alt='Profile pic' className='profile' />  
         <h1>Hello!</h1>
         <p>My name is AlFredo Valle. I'm a software developer.</p>
-        <p>I'm looking forward to work on new and exciting projects!</p>
+        <p>I look forward to working on new and exciting projects!</p>
         {this.state.displayBio ? (
           <div>
             <p>
-              I live in San Benito in the Rio Grande Valley area of beautiful
-              south Texas, and am passionate about coding.
+              I live in San Benito, a small city in the Rio Grande Valley area of beautiful
+              south Texas.
             </p>
             <p>
               My favorit language is Javascript, and I enjoy React and Angular
