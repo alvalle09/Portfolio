@@ -28,7 +28,7 @@ class Projects extends Component {
                        return (
                            <Project key={PROJECT.id} project={PROJECT} />
                        );
-                   }) 
+                   })
                 }
 
             </div>
