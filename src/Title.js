@@ -11,6 +11,21 @@ const TITLES = [
 class Title extends Component {
     state = { titleIndex: 0 };
 
+    componentDidMount() {
+        console.log('Title component mounted');
+
+        this.animateTitles();
+    }
+
+    animateTitles = () => {
+        setInterval(() => {
+            // using modulus to reset back 0 index
+            const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
+
+            this.setState({ titleIndex });
+        }, 4000);
+    }
+
     render() {
         const title = TITLES[this.state.titleIndex];
 
