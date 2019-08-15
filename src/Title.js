@@ -1,16 +1,17 @@
 import React, {Component } from 'react';
 
 const TITLES = [
-    'a software developer', 
-    'a drumming enthusiast',
-    'a lifelong learner',
-    'an avid reader',
-    'a nature admirer'
+    'a software developer.', 
+    'a lifelong learner.',
+    'an avid reader.',
+    'a nature admirer.',
+    'a drums enthusiast.'
 ];
 
 class Title extends Component {
     state = { titleIndex: 0 };
-
+    
+    // component is inserted into DOM
     componentDidMount() {
         console.log('Title component mounted');
 
@@ -19,11 +20,11 @@ class Title extends Component {
 
     animateTitles = () => {
         setInterval(() => {
-            // using modulus to reset back 0 index
+            // using modulus operator % to reset back 0 index
             const titleIndex = (this.state.titleIndex + 1) % TITLES.length;
 
             this.setState({ titleIndex });
-        }, 4000);
+        }, 2000);
     }
 
     render() {
@@ -34,6 +35,5 @@ class Title extends Component {
         )
     }
 }
-
 
 export default Title;
