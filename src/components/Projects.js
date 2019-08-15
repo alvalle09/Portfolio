@@ -17,22 +17,20 @@ const Project = props => {
     
 }
 
-class Projects extends Component {
-    render() {
-        return (
-            <div>
-                <h2>Highlighted Projects</h2>
-                {
-                   PROJECTS.map(PROJECT => {
-                       return (
-                           <Project key={PROJECT.id} project={PROJECT} />
-                       );
-                   })
-                }
+const Projects = () => {    
+    return (
+        <div>
+            <h2>Highlighted Projects</h2>
+            {
+                PROJECTS.map(PROJECT => {
+                    return (
+                        <Project key={PROJECT.id} project={PROJECT} />
+                    );
+                })
+            }
 
-            </div>
-        )
-    }
+        </div>
+    )
 }
 
 export default Projects;
