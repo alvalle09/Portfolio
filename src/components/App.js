@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
-import profile from "./assets/profile.png";
+import profile from "../assets/profile.png";
 import Title from './Title';
 
 class App extends Component {
@@ -20,7 +20,7 @@ class App extends Component {
         {/* insert Title Component */}        
         <Title/>
         
-        <p>My passion is creating productive and innovative projects!</p>
+        <p>My passion is creating innovative and productive projects!</p>
         {this.state.displayBio ? (
           <div>
             <p>
