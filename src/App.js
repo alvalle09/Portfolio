@@ -18,17 +18,16 @@ class App extends Component {
         <h1>Hello!</h1>
         <p>My name is AlFredo Valle.</p>
         {/* insert Title Component */}        
-        { this.state.displayBio ? <Title/> : null }
+        <Title/>
         
-        <p>I look forward to working on new and exciting projects!</p>
+        <p>My passion is creating productive and innovative projects!</p>
         {this.state.displayBio ? (
           <div>
             <p>
-              I live in San Benito, a small city in the Rio Grande Valley area
-              of beautiful south Texas.
+              I'm from San Benito, Texas. 
             </p>
             <p>
-              My favorit language is Javascript, and I enjoy React and Angular
+              My favorit language is Javascript, along with  React and Angular
               as well.
             </p>
             <p>
