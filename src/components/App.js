@@ -3,6 +3,7 @@ import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import profile from "../assets/profile.png";
 import Title from './Title';
+import Jokes from './Jokes';
 
 class App extends Component {
   state = { displayBio: false };
@@ -20,7 +21,7 @@ class App extends Component {
         {/* insert Title Component */}        
         <Title/>
         
-        <p>My passion is creating innovative and productive projects!</p>
+        <p>My passion is working on innovative and productive projects!</p>
         {this.state.displayBio ? (
           <div>
             <p>
@@ -42,9 +43,14 @@ class App extends Component {
           </div>
         )}
         <hr />
+        {/* Projects Component */}
         <Projects />
         <hr />
+        {/* Social Profiles Component */}
         <SocialProfiles />
+        <hr />
+        {/* Jokes Conponet */}
+        <Jokes/>
       </div>
     );
   }
