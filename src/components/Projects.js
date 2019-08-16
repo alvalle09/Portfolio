@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import PROJECTS from '../data/projects';
 
 const Project = props => {   
@@ -17,20 +17,18 @@ const Project = props => {
     
 }
 
-const Projects = () => {    
-    return (
+const Projects = () => (    
+    <div>
+        <h2>Highlighted Projects</h2>
         <div>
-            <h2>Highlighted Projects</h2>
             {
-                PROJECTS.map(PROJECT => {
-                    return (
-                        <Project key={PROJECT.id} project={PROJECT} />
-                    );
-                })
+                PROJECTS.map(PROJECT => (
+                    <Project key={PROJECT.id} project={PROJECT} />
+                    )
+                )
             }
-
-        </div>
-    )
-}
+            </div>
+    </div>
+)
 
 export default Projects;

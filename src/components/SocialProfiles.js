@@ -1,19 +1,17 @@
 import React, { Component } from 'react';
 import SOCIAL_PROFILES from '../data/socialProfiles';
 
-class SocialProfile extends Component {
-    render() {
-        const { link, image } = this.props.socialProfile;
+const SocialProfile = props => {
+    const { link, image } = this.props.socialProfile;
 
-        return (
-            <span>
-                <a href={link}>
-                    <img src={image} alt='social-profile' 
-                    style={{ widht: 35, height: 35, margin: 10 }}/>
-                </a>
-            </span>
-        )
-    }
+    return (
+        <span>
+            <a href={link}>
+                <img src={image} alt='social-profile' 
+                style={{ widht: 35, height: 35, margin: 10 }}/>
+            </a>
+        </span>
+    
 }
 
 class SocialProfiles extends Component {
