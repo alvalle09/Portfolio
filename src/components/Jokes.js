@@ -12,10 +12,14 @@ class Jokes extends Component {
     }
 
     render() {
-        const { setup, punchline } = this.state.joke;
         
+        const { setup, punchline } = this.state.joke;
+
         return (
-            <div></div>
+            <div>
+                <h2>Highlighted Joke</h2>
+                <p>{setup} <em>{punchline}</em></p>
+            </div>
         )
     }
 }
