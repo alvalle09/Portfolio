@@ -16,7 +16,7 @@ class Title extends Component {
     // component is inserted into DOM
     componentDidMount() {
         //console.log('Title component mounted.');
-        this.timeout = setTimeout(() => { this.setState({ fadeIn: false }) }, 2000);
+        this.timeout = setTimeout(() => { this.setState({ fadeIn: false }) }, 3000);
 
         this.animateTitles();
     }
@@ -34,7 +34,7 @@ class Title extends Component {
 
             this.setState({ titleIndex, fadeIn: true });
 
-            this.timeout = setTimeout(() => { this.setState({ fadeIn: false }) }, 2000);
+            this.timeout = setTimeout(() => { this.setState({ fadeIn: false }) }, 3000);
         }, 4000);
 
         //console.log('this.titleInterval', this.titleInterval);

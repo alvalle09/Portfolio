@@ -1,5 +1,12 @@
 import React, { Component } from 'react';
 
+const Joke = props => {
+    const { setup, punchline } = props.joke;
+
+    return <p>{setup} <em>{punchline}</em></p>
+}
+
+
 class Jokes extends Component {
     state = { joke: {}, jokes: []  }; // add jokes array for fetching 10 jokes
 
