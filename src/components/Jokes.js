@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from './Header';
 
 // single place for rendering Jokes
 const Joke = ({ joke : { setup, punchline } }) => (
@@ -25,6 +26,7 @@ class Jokes extends Component {
     render() {        
         return (
             <div>
+                <Header />
                 <h2>Highlighted Joke</h2>
                 {/* use Joke stateless component, pass props */}
                 <Joke joke={this.state.joke} />  
