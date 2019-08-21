@@ -1,22 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./components/App";
+import { Router, Switch, Route } from 'react-router-dom';
+import createBrowserHistory from 'history/createHashHistory';
+import App from './components/App';
+
+import Jokes from './components/Jokes';
 import './index.css';
 import { resolve } from "path";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const history = createBrowserHistory();
 
-// Experimental code for testing promises
-// new Promise((resolve, reject) => {
-//     // use return keyword to ensure we escape the function for testing catch
-//     return reject(new Error('No Bears'));
-//     setTimeout(() => {
-//          resolve('Bears, and lions, oh my');  //proimse has completed, keyword callback
-//     }, 2000);
-// })
-// .then( quote => {
-//     console.log(quote);    
-// })
-// .catch(error => console.log('error', error));
+ReactDOM.render(
+    <Router history={history}>
+        <Switch>
+            <Route exact={true}  path='/' component={App}  />
+            <Route path='/jokes' component={Jokes} />
+        </Switch>
+    </Router>,
+    document.getElementById("root")
+);
 
 
