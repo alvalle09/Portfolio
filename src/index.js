@@ -15,8 +15,8 @@ import { resolve } from "path";
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
         <Switch>
-            <Route exact path='/' render={() => <Header Component={App} /> } />
-            <Route path='/jokes' render={() => <Header Component={Jokes} /> } />
+            <Route exact path='/' render={() => <Header> <App /> </Header> } />
+            <Route path='/jokes' render={() => <Header> <Jokes /> </Header> } />
         </Switch>
     </Router>,
     document.getElementById("root")

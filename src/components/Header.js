@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const Header = props => {
-  const { Component } = props;
+const Header = ({ children }) => {
 
   const style = {
     display: "inline-block",
@@ -20,7 +19,7 @@ const Header = props => {
           <Link to="/jokes">Jokes</Link>
         </h3>
       </div>
-      <Component />
+      {children}
     </div>
   )
 }
