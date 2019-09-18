@@ -13,7 +13,8 @@ class Search extends Component {
   };
 
   searchArtist = () => {
-      this.props.searchArtist(this.state.artistQuery);
+      if (this.state.artistQuery) {
+        this.props.searchArtist(this.state.artistQuery) };  
   }
 
   render() {
