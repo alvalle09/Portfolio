@@ -24,7 +24,7 @@ class Tracks extends Component {
     
     trackIcon = track => {
       if (!track.preview_url) {
-        return <spa>Preview N/A</spa>
+        return <span>Preview N/A</span>
       }
 
       if (

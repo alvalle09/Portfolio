@@ -7,6 +7,7 @@ class Search extends Component {
   };
 
   handleKeyPress = event => {
+    console.log(event);
     if (event.key === "Enter") {
       this.searchArtist();
     }
@@ -32,3 +33,5 @@ class Search extends Component {
 }
 
 export default Search;
+
+
