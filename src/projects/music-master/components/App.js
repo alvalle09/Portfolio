@@ -13,7 +13,6 @@ class App extends Component {
 
   componentDidMount() {
     this.searchArtist('The Beatles');
-    
   }
 
 
