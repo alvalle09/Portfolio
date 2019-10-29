@@ -18,10 +18,11 @@ class App extends Component {
         <img src={profile} alt="Profile pic" className="profile" />
         <h1>Hello!</h1>
         <p>My name is AlFredo Valle.</p>
+
         {/* insert Title Component */}        
         <Title/>
         
-        <p>My passion is working on innovative and productive projects!</p>
+        <p>My passion is working on productive and innovative projects!</p>
         {this.state.displayBio ? (
           <div>
             <p>
