@@ -7,13 +7,15 @@ class Search extends Component {
   };
 
   handleKeyPress = event => {
+    console.log(event);
     if (event.key === "Enter") {
       this.searchArtist();
     }
   };
 
   searchArtist = () => {
-      this.props.searchArtist(this.state.artistQuery);
+      if (this.state.artistQuery) {
+        this.props.searchArtist(this.state.artistQuery) };  
   }
 
   render() {
@@ -31,3 +33,5 @@ class Search extends Component {
 }
 
 export default Search;
+
+

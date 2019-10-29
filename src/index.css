@@ -8,7 +8,9 @@
     font-family: EconomicaBold;
     src: url(assets/economica-bold.ttf);
     font-weight: 800;
+
 }
+
 
 
 body {
@@ -16,6 +18,7 @@ body {
     font-size: 20px;
     padding: 2.5%;
     font-family: 'RobotoCondensed';
+    
 }
 
 h1, h2, h3, h4, h5 {
