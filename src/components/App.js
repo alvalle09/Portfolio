@@ -29,12 +29,10 @@ class App extends Component {
               I'm from San Benito, Texas. 
             </p>
             <p>
-              My favorit language is Javascript, along with  React and Angular
-              as well.
+              I am a full-stack web developer.  
             </p>
             <p>
-              When I am not coding, I like to spend time in the outdoors fishing
-              and camping, or playing drums!
+              When I am not coding, I like spending time running, fishing, camping and playing drums!
             </p>
             <button onClick={this.toggleDisplayBio}>Show less</button>
           </div>
