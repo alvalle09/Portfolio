@@ -7,7 +7,6 @@ export const GlobalStyles = createGlobalStyle`
         transition: all 1.0s linear;
     }
     `
-
     export const lightTheme = {
         body: '#FFF',
         text: '#000',
@@ -19,4 +18,3 @@ export const GlobalStyles = createGlobalStyle`
     }
 
 
-    

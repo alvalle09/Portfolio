@@ -10,7 +10,7 @@ import './index.css';
 import { resolve } from "path";
 
 // inline this since only using once.
-//const history = createBrowserHistory();
+const history = createBrowserHistory();
 
 ReactDOM.render(
     <Router history={createBrowserHistory()}>
