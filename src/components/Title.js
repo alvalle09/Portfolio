@@ -1,9 +1,9 @@
 import React, {Component } from 'react';
 
 const TITLES = [ 
-    'Building software to better the world',
+    'Building software to build a better world!',
     'Code, eat, sleep, repeat...',
-    'Learn at least 1 new thing each day',
+    'Learn at least 1 new thing each day.',
 ];
 
 class Title extends Component {
