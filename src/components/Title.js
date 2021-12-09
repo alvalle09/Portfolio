@@ -1,11 +1,9 @@
 import React, {Component } from 'react';
 
 const TITLES = [ 
-    'Passions include:',
-    'reading.',
-    'learning.',
-    'implementing.',
-    'repeat...'
+    'Building software to better the world',
+    'Code, eat, sleep, repeat...',
+    'Learn at least 1 new thing each day',
 ];
 
 class Title extends Component {
