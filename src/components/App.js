@@ -16,23 +16,15 @@ class App extends Component {
     return (
       <div>
         <img src={profile} alt="Profile pic" className="profile" />
-        <h1>Hello!</h1>
-        <p>My name is AlFredo Valle.</p>
+        <h1>Alfredo Valle</h1>
 
-        {/* insert Title Component */}        
         <Title/>
-        
-        <p>My passion is working on productive and innovative projects!</p>
+    
+        <p>Software developer </p>
         {this.state.displayBio ? (
           <div>
             <p>
-              I'm from San Benito, Texas. 
-            </p>
-            <p>
-              I am a full-stack web developer.  
-            </p>
-            <p>
-              When I am not coding, I like spending time running, fishing, camping and playing drums!
+              Web developer hailing from San Benito, Texas. 
             </p>
             <button onClick={this.toggleDisplayBio}>Show less</button>
           </div>
