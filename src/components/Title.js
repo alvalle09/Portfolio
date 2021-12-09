@@ -1,11 +1,11 @@
 import React, {Component } from 'react';
 
 const TITLES = [ 
-    'love coding',
-    'enjor reading good books.',
-    'enjoy the outdoors.',
-    'enjoy playing drums.',
-    'love going for runs.'
+    'Passions include:',
+    'reading.',
+    'learning.',
+    'implementing.',
+    'repeat...'
 ];
 
 class Title extends Component {
@@ -13,16 +13,14 @@ class Title extends Component {
               fadeIn: true              
             };
     
-    // component is inserted into DOM
     componentDidMount() {
-        //console.log('Title component mounted.');
+
         this.timeout = setTimeout(() => { this.setState({ fadeIn: false }) }, 3000);
 
         this.animateTitles();
     }
     
     componentWillUnmount() {
-        //console.log('Title Component will unmount.')
         clearInterval(this.titleInterval);
         clearTimeout(this.timeout);
     }
@@ -36,8 +34,6 @@ class Title extends Component {
 
             this.timeout = setTimeout(() => { this.setState({ fadeIn: false }) }, 2000);
         }, 4000);
-
-        //console.log('this.titleInterval', this.titleInterval);
         
     }
 
@@ -47,7 +43,7 @@ class Title extends Component {
         const title = TITLES[titleIndex];
 
         return (
-            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>I {title}</p>
+            <p className={fadeIn ? 'title-fade-in' : 'title-fade-out'}>{title}</p>
         )
     }
 }
