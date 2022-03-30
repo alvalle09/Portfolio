@@ -24,7 +24,7 @@ class App extends Component {
         {this.state.displayBio ? (
           <div>
             <p>
-              Web developer hailing from San Benito, Texas. 
+              Full Stack web developer hailing from San Benito, Texas. 
             </p>
             <button onClick={this.toggleDisplayBio}>Show less</button>
           </div>
