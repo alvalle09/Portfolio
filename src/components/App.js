@@ -20,7 +20,7 @@ class App extends Component {
 
         <Title/>
     
-        <p>Software developer </p>
+        <p>Full Stack Developer</p>
         {this.state.displayBio ? (
           <div>
             <p>
