@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5 {
     width: 200px;
     height: 200px;
     /* when border radius is half the width and height, makes complete circle */
-    border-radius: 100px;
+    /* border-radius: 100px; */
 }
 
 .title-fade-in {
